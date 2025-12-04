@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Sans+KR:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="headerLeft"></div>
+      <div class="headerCenter">
+        <div class="headerInner">
+          <h1>
+            <a href="index.html">영화 찾기</a>
+          </h1>
+          <div class="search">
+            <input id="searchInput" placeholder="영화제목을 입력하세요" />
+            <button id="searchBtn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+          <div class="menu">
+            <button type="button" class="active" onclick="movie(`now_playing`)">
+              현재상영작
+            </button>
+            <button type="button" onclick="movie(`popular`)">무비차트</button>
+            <button type="button" onclick="movie(`top_rated`)">추천영화</button>
+            <button type="button" onclick="movie(`upcoming`)">상영예정</button>
+          </div>
+          <ul class="mode">
+            <li class="night"><i class="fa-regular fa-moon"></i></li>
+            <li class="day"><i class="fa-solid fa-sun"></i></li>
+          </ul>
+        </div>
+      </div>
+      <div class="headerRight"></div>
+    </header>
+    <section id="movieBoard"></section>
+    <div id="utility-buttons">
+      <button id="toTopBtn"><i class="fa-solid fa-caret-up"></i>위로</button>
+      <button id="more">더보기<i class="fa-solid fa-caret-down"></i></button>
+    </div>
+    <script src="js/custom5.js"></script>
+  </body>
+</html>
