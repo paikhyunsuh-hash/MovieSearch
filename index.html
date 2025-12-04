@@ -20,18 +20,23 @@
   <body>
     <!--HEADER-->
     <header>
+      <!--HEADER LEFT-->
       <div class="headerLeft"></div>
+      <!--HEADER CENTER-->
       <div class="headerCenter">
+        <!--HEADER CENTER INNER-->
         <div class="headerInner">
           <h1>
             <a href="index.html">영화 찾기</a>
           </h1>
+          <!--HEADER CENTER INNER SEARCH-->
           <div class="search">
             <input id="searchInput" placeholder="영화제목을 입력하세요" />
             <button id="searchBtn">
               <i class="fa-solid fa-magnifying-glass"></i>
             </button>
           </div>
+          <!--HEADER CENTER INNER MENU-->
           <div class="menu">
             <button type="button" class="active" onclick="movie(`now_playing`)">
               현재상영작
@@ -40,16 +45,19 @@
             <button type="button" onclick="movie(`top_rated`)">추천영화</button>
             <button type="button" onclick="movie(`upcoming`)">상영예정</button>
           </div>
+          <!--HEADER CENTER INNER MODE-->
           <ul class="mode">
             <li class="night"><i class="fa-regular fa-moon"></i></li>
             <li class="day"><i class="fa-solid fa-sun"></i></li>
           </ul>
         </div>
       </div>
+      <!--HEADER RIGHT-->
       <div class="headerRight"></div>
     </header>
     <!--MOVIEBOARD-->
     <section id="movieBoard"></section>
+    <!--MOVIEBOARD BUTTONS-->
     <div id="utility-buttons">
       <button id="toTopBtn"><i class="fa-solid fa-caret-up"></i>위로</button>
       <button id="more">더보기<i class="fa-solid fa-caret-down"></i></button>
